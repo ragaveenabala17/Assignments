@@ -1,0 +1,67 @@
+Problem : 1
+
+package day1;
+
+public class Assignment_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	float f = 86.7f;
+	double d = f;
+	int num = (int) d;
+	char c = (char) num;
+	
+	
+	
+	System.out.println("double = " + d);
+    System.out.println("int = " + num);
+    System.out.println("ASCII (char) = " + c);
+	}
+
+}
+
+
+Output: 
+
+double = 86.69999694824219
+int = 86
+ASCII (char) = V
+
+
+
+-------------------------------------------------------------------------------------------
+
+
+Problem 2: 
+
+
+package day1;
+
+public class Assignment_1B {
+
+	public static void main(String[] args) {
+		
+		char c = 'B';
+		int a = (int)c;
+		int a1 =  a+5;
+	    char c1 = (char) a1;
+	   
+		System.out.println(c);
+		System.out.println("ASCII value:"+a);
+		System.out.println("New Value:"+a1);
+		System.out.println("New Char:"+c1);
+		
+
+	}
+
+}
+
+
+Out put : 
+
+B
+ASCII value:66
+New Value:71
+New Char:G
+
