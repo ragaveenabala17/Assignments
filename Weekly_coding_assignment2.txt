@@ -1,0 +1,53 @@
+write a program to check if a number
+is prime or not
+
+
+Eg   21 not prime
+     7  prime
+    39  not prime
+	
+	
+	
+	
+:
+
+
+package assignment;
+
+public class Primenumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		  
+		        int num = 21; // we can  change this number to test
+
+		        if (num <= 1) {
+		            System.out.println(num + " not prime");
+		        } else {
+		            boolean isPrime = true;
+
+		            for (int i = 2; i <= num / 2; i++) {
+		                if (num % i == 0) {
+		                    isPrime = false;
+		                    break;
+		                }
+		            }
+
+		            if (isPrime) {
+		                System.out.println(num + " prime");
+		            } else {
+		                System.out.println(num + " is not prime");
+		            }
+		        }
+		    }
+		
+
+	}
+
+
+out put :
+
+21 is not prime

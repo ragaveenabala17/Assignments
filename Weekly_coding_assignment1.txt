@@ -1,0 +1,52 @@
+ðŸ’» Problem Statement
+
+Write a Java program where:
+
+A float variable marks = 97.8f is given
+Convert it into:
+double (upcasting)
+int (downcasting)
+Convert the final int value into a character (ASCII conversion)
+Print all intermediate and final values
+
+âœ… Output Explanation
+Float value: 97.8
+Converted to double: 97.8
+Converted to int: 97
+Character value: a
+
+ðŸ‘‰ ASCII 97 = 'a'
+
+
+
+
+Program :
+
+package assignment;
+
+public class ASCII {
+
+	public static void main(String[] args) {
+		
+		char c = 'B';
+		int a = (int)c;
+		int a1 =  a+5;
+	    char c1 = (char) a1;
+	   
+		System.out.println(c);
+		System.out.println("ASCII value:"+a);
+		System.out.println("New Value:"+a1);
+		System.out.println("New Char:"+c1);
+		
+
+	}
+
+}
+
+
+Output:
+
+B
+ASCII value:66
+New Value:71
+New Char:G
