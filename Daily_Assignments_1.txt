@@ -1,0 +1,508 @@
+Program:1 
+---------
+
+print the below ouput in one coding line
+do note variable a has value 5 initially
+and in second line tab is used
+
+âœ… Output
+
+
+Value of "a":5
+After increment:	7
+
+Solution:
+--------
+
+package assignment;
+
+public class AfterIncrement {
+
+	public static void main(String[] args) {
+
+		int a = 5;
+		System.out.println("value\"a\":"+a);
+	    System.out.println(++a);
+	    System.out.println(++a);
+		System.out.println("After increment:\t" +a);
+
+	}
+
+
+
+
+
+    }
+	
+out put :
+----------	
+value"a":5
+6
+7
+After increment:	7
+
+Program 2:
+---------
+ðŸ’» Problem Statement
+
+Write a Java program where:
+
+A float variable marks = 97.8f is given
+Convert it into:
+double (upcasting)
+int (downcasting)
+Convert the final int value into a character (ASCII conversion)
+Print all intermediate and final values
+
+âœ… Output Explanation
+Float value: 97.8
+Converted to double: 97.8
+Converted to int: 97
+Character value: a
+
+ðŸ‘‰ ASCII 97 = 'a'
+
+Soultion:
+-----------
+package assignment;
+
+public class Datatypes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	float f = 86.7f;
+	double d = f;
+	int num = (int) d;
+	char c = (char) num;
+	
+	
+	
+	System.out.println("double = " + d);
+    System.out.println("int = " + num);
+    System.out.println("ASCII (char) = " + c);
+	}
+
+}
+out put value :
+--------------
+double = 86.69999694824219
+int = 86
+ASCII (char) = V
+
+
+
+program 3:
+----------
+
+ðŸ”¹ 1. Factorial of a Number
+
+ðŸ‘‰ Question:
+Find the factorial of a number using loop.
+
+Example:
+
+5! = 5 Ã— 4 Ã— 3 Ã— 2 Ã— 1 = 120
+ðŸ”¹ 2. Perfect Number
+
+ðŸ‘‰ Question:
+Check whether a number is a perfect number.
+
+ðŸ‘‰ A number is perfect if:
+Sum of its proper divisors = number
+
+Example:
+
+6 â†’ 1 + 2 + 3 = 6 âœ…
+
+solution: 
+-----------
+package assignment;
+
+public class factorial {
+
+public static void main(String[] args) {
+
+		        int num = 5; 
+		        int fact = 1;
+
+		        for (int i = 1; i <= num; i++) {
+		            fact = fact * i;
+		        }
+
+		        System.out.println("Factorial of " + num + " is " + fact);
+		   
+
+}
+		
+	}
+
+out put :
+--------- 
+Factorial of 5 is 120
+
+program 4:
+----------
+
+Student Result System (Advanced)
+
+Write a Java program that:
+
+Input:
+Marks of 5 subjects (out of 100 each)
+
+
+Conditions:
+1. Fail Condition
+If any subject < 33 â†’
+Result = Fail
+Grade = F
+
+2. If Pass (all subjects â‰¥ 33):
+Calculate percentage and print percentage
+Result=Pass
+and check grade on basis of percentage as
+Assign grade:
+Percentage	Grade
+â‰¥ 90	A+
+75â€“89	A
+60â€“74	B
+50â€“59	C
+33â€“49	D
+Solution:
+----------
+package assignment;
+
+public class Result {
+
+	
+	    public static void main(String[] args) {
+
+	        
+	        int s1 = 80;// we can change the numbers here to check result
+	        int s2 = 75;
+	        int s3 = 60;
+	        int s4 = 90;
+	        int s5 = 85;
+
+	   
+	        if (s1 < 33 || s2 < 33 || s3 < 33 || s4 < 33 || s5 < 33) {
+	            System.out.println("Result: Fail");
+	            System.out.println("Grade: F");
+	        } 
+	        
+	        else {
+	            int total = s1 + s2 + s3 + s4 + s5;
+	            int percentage = total / 5;
+
+	            System.out.println("Result: Pass");
+	            System.out.println("Percentage: " + percentage);
+
+	           
+	            if (percentage >= 90) {
+	                System.out.println("Grade: A+");
+	            } else if (percentage >= 75) {
+	                System.out.println("Grade: A");
+	            } else if (percentage >= 60) {
+	                System.out.println("Grade: B");
+	            } else if (percentage >= 50) {
+	                System.out.println("Grade: C");
+	            } else {
+	                System.out.println("Grade: D");
+	            }
+	        }
+	    }
+	}
+	
+	
+out put :
+---------
+Result: Pass
+Percentage: 78
+Grade: A
+
+program 5:
+----------
+
+Write a Java program for a student management system that stores and prints the following details:
+
+Student age
+
+Student marks (out of 500)
+
+Mobile battery percentage (0â€“100)
+
+City population (e.g., 25,00,000)
+
+Student grade (A/B/C/etc.)
+
+Bank balance (no decimals)
+
+User login status (true/false)
+
+Distance to college in meters
+
+A very large number: 9,000,000,000
+
+ðŸ“Œ Requirements:
+
+You must:
+
+Declare variables for all the above values
+
+Assign appropriate values
+
+Print them in a proper format
+
+Important Constraint:
+
+Choose the most suitable data type for each variable
+
+Do NOT use float or double
+
+ðŸ“¤ Sample Output Format:
+Age: 21
+Marks: 450
+Battery: 85%
+City Population: 2500000
+Grade: A
+Bank Balance: 50000
+Login Status: true
+Distance: 1200 meters
+Large Number: 9000000000
+
+soultion :
+------------
+package assignment;
+
+public class StudentMarks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		        int age = 21;
+		        int marks = 450;
+		        int battery = 85;
+		        int population = 2500000;
+		        char grade = 'A';
+		        int bankBalance = 50000;
+		        boolean loginStatus = true;
+		        int distance = 1200;
+		        long largeNumber = 9000000000L;
+
+		        System.out.println("Age: " + age);
+		        System.out.println("Marks: " + marks);
+		        System.out.println("Battery: " + battery + "%");
+		        System.out.println("City Population: " + population);
+		        System.out.println("Grade: " + grade);
+		        System.out.println("Bank Balance: " + bankBalance);
+		        System.out.println("Login Status: " + loginStatus);
+		        System.out.println("Distance: " + distance + " meters");
+		        System.out.println("Large Number: " + largeNumber);
+		    }
+		
+	}
+
+
+out put :
+---------
+Age: 21
+Marks: 450
+Battery: 85%
+City Population: 2500000
+Grade: A
+Bank Balance: 50000
+Login Status: true
+Distance: 1200 meters
+Large Number: 9000000000
+
+
+Program 6:
+----------
+
+Question
+
+Write a Java program using a while loop to print numbers from 1 to 50 with the following conditions:
+
+ðŸ”¹ Rules:
+If the number is a multiple of 2 and 5 both, print â†’ the square of the number
+If the number is only a multiple of 2, print â†’ the cube of the number
+If the number is only a multiple of 5, print â†’ the number Ã— 5
+Otherwise, print the number as it is
+ðŸ“Œ Output Format Example (partial)
+1
+8
+3
+64
+25
+216
+7
+512
+9
+100
+
+soultion:
+---------
+package assignment;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		        int i = 1;
+
+		        while (i <= 10) {   
+		            if (i % 2 == 0 && i % 5 == 0) {
+		                System.out.println(i * i);
+		            }
+		           
+		            else if (i % 2 == 0) {
+		                System.out.println(i * i * i);
+		            }
+		            else if (i % 5 == 0) {
+		                System.out.println(i * 5);
+		            }
+		            else {
+		                System.out.println(i);
+		            }
+
+		            i++;
+		        }
+		    }
+		
+	}
+
+out put :
+---------
+1
+8
+3
+64
+25
+216
+7
+512
+9
+100
+
+Program 7:
+----------
+
+create below patterns
+i)
+*****
+****
+***
+**
+*
+
+ii)
+1
+12
+123
+1234
+12345
+Soultion ii):
+--------
+package assignment;
+
+public class Star_pattern2 {
+
+ public static void main(String[] args) {
+
+        for (int i = 1; i <= 5; i++) {
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+
+            System.out.println();
+        }
+    }
+
+	}
+
+out put : 
+---------
+1
+12
+123
+1234
+12345
+
+
+------------------------------------------
+Soultion ii)
+package assignment;
+
+public class Starpattern_1 {
+
+	
+
+		    public static void main(String[] args) {
+
+		        for (int i = 5; i >= 1; i--) {
+
+		            for (int j = 1; j <= i; j++) {
+		                System.out.print("*");
+		            }
+
+		            System.out.println();
+		        }
+		    }
+		
+
+	}
+
+out put :
+---------
+*****
+****
+***
+**
+*
+
+Program 8:
+----------
+
+Assignment: Armstrong Number Checker (Java)
+
+Write a Java program to check whether a given number is an Armstrong number or not.
+
+ðŸ‘‰ A number is called an Armstrong number if the sum of the cubes of its digits is equal to the number itself.
+Example:
+
+=153 âœ… (Armstrong number)
+123 â†’ Not an Armstrong number âŒ
+
+
+solution : 
+-------------
+package assignment;
+
+public class Armstrong {
+
+	public static void main(String[] args) {
+		//TODO Auto-generated method stub
+		
+		 int number = 153; // You can change this value
+		        int originalNumber = number;
+		        int sum = 0;
+
+		        while (number !=0) {
+		            int digit = number % 10;
+		            sum += digit * digit * digit; // cube of digit
+		            number = number / 10;
+		        }
+		        if (sum == originalNumber) {
+		            System.out.println(originalNumber + " is an Armstrong number.");
+		        } else {
+		            System.out.println(originalNumber + " is NOT an Armstrong number.");
+		        }
+		    }
+	}
+
+out put :
+----------
+153 is an Armstrong number.
